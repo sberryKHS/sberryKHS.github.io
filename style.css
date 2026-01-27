@@ -70,9 +70,11 @@ main {
 
 /* interests section styles */
 #interests {
-    border: 4px silver ridge;
-    padding: 8px;
-    margin-top: 20px;
+    border-width: 5px;
+    border-style: inset;
+    border-color: #F8B0C8;
+    border-radius: 10px 30px;
+    padding: 10px;
 }
 
 h2, h3 {
@@ -87,6 +89,9 @@ h2, h3 {
 #portfolio {
   list-style-type: none;
   padding-left: 0;
+  border-width: 5px;
+  border-style: ridge;
+  border-color: #F8B0C8;
 }
 
 #portfolio li {
@@ -154,3 +159,4 @@ h2, h3 {
     justify-content: center;
   }
 }
+/*Extra*/
