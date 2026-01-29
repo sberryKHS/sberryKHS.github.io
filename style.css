@@ -46,9 +46,16 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: white;
+    background: linear-gradient(-90deg,  #ffffff, #fce9ee, #ffffff); /* Added 3rd color for seamless loop */
+    background-size: 200% auto; /* 1. Must be larger than container */
     display: flex;
     margin-top: 20px;
+    animation: text-shine 3s linear infinite;
+}
+
+@keyframes text-shine {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; } /* 2. Move the position */
 }
 
 .sidebar {
@@ -159,4 +166,14 @@ h2, h3 {
     justify-content: center;
   }
 }
-/*Extra*/
+.overlay-gif {
+    position: fixed;   /* Locks it to the browser window */
+    top: 0;
+    left: 0;
+    width: 100vw;      /* Full screen width */
+    height: 100vh;     /* Full screen height */
+    object-fit: cover; /* Keeps it from stretching weirdly */
+    z-index: 9999;     /* Keeps it above every other element */
+    pointer-events: none; /* ALLOWS you to click buttons behind the gif */
+    opacity: 0.4;      /* Makes it look like a subtle light effect */
+}
