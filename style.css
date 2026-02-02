@@ -1,6 +1,6 @@
 body {
     background: #ECBDC4;
-    color: #F9D0DE;
+    color: #f5a3be;
     padding: 10px;
     font-family: Garamond;
 }
@@ -16,7 +16,7 @@ nav {
     margin: 0 auto;
     display: flex;
     padding: 10px;
-    margin-bottom: 20;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -90,7 +90,7 @@ h2, h3 {
 
 /* Portfolio styles */
 .content h1 {
-  color: #F9D0DE;
+  color: #f5a3be;
 }
 
 #portfolio {
@@ -114,7 +114,7 @@ h2, h3 {
 
 #portfolio a {
   text-decoration: none;
-  color: #F9D0DE;
+  color: #f5a3be;
 }
 
 /* responsive web design */
