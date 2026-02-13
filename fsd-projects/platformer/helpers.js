@@ -674,7 +674,7 @@ function checkForWin() {
 
 function winGame() {
   // If we reach this point, all collectables are collected
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "pink";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
