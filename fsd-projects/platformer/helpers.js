@@ -388,17 +388,17 @@ function badPlatformCollision() {
 }
 
 function deathOfPlayer() {
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "pink";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
     canvas.width / 2,
     canvas.height / 2
   );
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "white";
   ctx.font = "800% serif";
   ctx.fillText(
-    "You are dead",
+    "You died! ♱",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
@@ -684,7 +684,7 @@ function winGame() {
   ctx.fillStyle = "white";
   ctx.font = "800% serif";
   ctx.fillText(
-    "You Win!",
+    "You Win! ♡",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14

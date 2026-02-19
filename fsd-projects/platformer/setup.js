@@ -103,4 +103,6 @@ var collectableList = {
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
   hellokc: { image: "images/collectables/hellokc(1).png"},
+  heart1: {image: "images/collectables/pheart.gif"},
+  heart2: {image: "images/collectables/sheart.gif"},
 };
