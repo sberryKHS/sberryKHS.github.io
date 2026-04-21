@@ -30,7 +30,15 @@ var init = function (window) {
             view.addChild(circle);
             circles.push(circle);
         }
-
+        // Initialize gamification features (unlocked after completing educational TODOs)
+        Gamification.init({
+            canvas: canvas,
+            view: view,
+            draw: draw,
+            physikz: physikz,
+            circles: circles,
+            game: game
+        });
 
         // TODO 3 : Call the drawCircle() function
         drawCircle();
@@ -76,6 +84,7 @@ var init = function (window) {
            for (var u = 0; u < circles.length; u += 1) {
             game.checkCirclePosition(circles[u]);
            }
+           Gamification.update();
         }
     
         /* 
