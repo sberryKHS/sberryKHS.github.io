@@ -277,13 +277,16 @@ function cleanupGameObjects() {
 /*============================================================
 =           Rendering Helper Functions           =
 ====================================================*/
-
+const bg = new Image();
+bg.src = THEME.upperBackground;
 function drawBackground() {
   const w = canvas.width;
   const h = canvas.height;
 
-  ctx.fillStyle = THEME.upperBackground;
-  ctx.fillRect(0, 0, w, groundY);
+  // draw the upper background image ONLY if it's loaded
+  if (bg.complete) {
+    ctx.drawImage(bg, 0, 0, w, groundY);
+  }
 
   ctx.fillStyle = THEME.ground;
   ctx.fillRect(0, groundY, w, groundY + groundHeight);

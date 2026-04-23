@@ -1,7 +1,7 @@
 // === STUDENT SETTINGS ===
 // You can change these colors:
 const THEME = {
-  upperBackground: "midnightblue",
+  upperBackground: 'images/666.png',
   ground: "slategrey",
   lowerBackground: "darkgreen",
 };
