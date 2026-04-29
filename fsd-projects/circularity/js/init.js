@@ -80,7 +80,7 @@ var init = function (window) {
             // TODO 8 / TODO 9 : Iterate over the array
            for (var r = 0; r < circles.length; r += 1) {
             physikz.updatePosition(circles[r]);
-            game.checkCirclePosition(circles[u]);
+            game.checkCirclePosition(circles[r]);
            }
            Gamification.update();
         }
