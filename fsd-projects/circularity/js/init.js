@@ -41,11 +41,11 @@ var init = function (window) {
         });
 
         // TODO 3 : Call the drawCircle() function
+        /**drawCircle();
         drawCircle();
         drawCircle();
         drawCircle();
-        drawCircle();
-        drawCircle();
+        drawCircle();**/
         // TODO 7 : Use a loop to create multiple circles
         for (var i = 0; i < 50; i++) {
             drawCircle();
@@ -80,8 +80,6 @@ var init = function (window) {
             // TODO 8 / TODO 9 : Iterate over the array
            for (var r = 0; r < circles.length; r += 1) {
             physikz.updatePosition(circles[r]);
-           }
-           for (var u = 0; u < circles.length; u += 1) {
             game.checkCirclePosition(circles[u]);
            }
            Gamification.update();
@@ -100,15 +98,14 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            if (circle.x < 0) {
+            if (circle.x > canvas.width) {
+                circle.x = 0;
+            } else if (circle.x < 0) {
                 circle.x = canvas.width;
             }
-
-            if (circle.y > canvas.width) {
+            if (circle.y > canvas.height) {
                 circle.y = 0;
-            }
-
-            if (circle.y < 0) {
+            } else if (circle.y < 0) {
                 circle.y = canvas.height;
             }
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
